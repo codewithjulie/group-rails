@@ -1,0 +1,7 @@
+<h1><%= @type.name %></h1>
+
+<% @foods.each do |food| %>
+
+  <div><%= food.name%> costs <%= food.price%></div>
+
+<% end %>

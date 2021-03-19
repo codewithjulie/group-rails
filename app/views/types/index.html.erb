@@ -1,0 +1,7 @@
+<h1>Types of Food</h1>
+
+<% @types.each do |anything_you_like| %>
+
+  <div><%= anything_you_like.name %><%= link_to 'See More', type_path(anything_you_like) %></div>
+
+<% end %>
