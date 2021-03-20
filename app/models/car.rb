@@ -7,7 +7,7 @@ class Car < ApplicationRecord
 end
 
 
-model ==> speaking to the database
+# model ==> speaking to the database
 
-controller ==> what you want it to do when you go to a route
+# controller ==> what you want it to do when you go to a route
 

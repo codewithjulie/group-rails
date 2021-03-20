@@ -1,5 +1,14 @@
 <h1><%= @type.name %></h1>
 
+<%= form_for [@type, @food] do |f| %>
+
+  <%= f.text_field :name  %>
+  <%= f.text_field :price  %>
+  <%= f.submit %>
+  
+<% end %>
+
+
 <% @foods.each do |food| %>
 
   <div><%= food.name%> costs <%= food.price%></div>

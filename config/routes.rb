@@ -7,7 +7,22 @@ Rails.application.routes.draw do
   get '/cars/:make', to: 'cars#show_make'
 
 
-  resources :types
+
+  resources :types do
+    resources :foods
+  end  
+
+  # get "/types", to: "types#index" # get all food types
+  # get "/types/:id", to: "types#show" # get one food type
+  # get "/types/new", to: "types#new" # the page where you can add a new type
+  # post "/types", to: "types#create" # create a new type
+  # get "/types/:id/edit", to: "types#edit" # page where you can edit type
+  # patch "types/:id", to: "types#update" # updates the type
+  # delete "/types/:id", to: "types#destroy" # deletes the type
+
+  
+
+
   # there are 7
   # get "/food_types", to: "food_types#index" # get all food types (index)
   # get "/food_types/:id", to: "food_types#show"
