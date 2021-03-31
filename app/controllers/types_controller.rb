@@ -15,6 +15,8 @@ class TypesController < ApplicationController
     # what's the difference find, find_by and where
 
     @foods = @type.foods
+
+    render "show", layout: false
   end
 
   def new
